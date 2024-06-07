@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Pacifico&family=Poetsen+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.game {
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.box:hover {
+    background-color: darksalmon;
+    transform: scale(1.05);
+}
+
+#reset-btn, #new-btn {
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1.30rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#reset-btn:hover, #new-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#msg {
+    font-family: "Poetsen One", sans-serif;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.msg-container {
+    height: 20vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
